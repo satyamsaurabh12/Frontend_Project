@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" data-ds-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Responsive Website</title>
+    <style>
+        .header1{
+            height:100px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:#BBE9FF;
+            
+        }
+        .logo{
+            height:85px;
+        }
+        
+        .menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        button{
+            height:50px;
+            width:99px;
+            text-align: center;
+           
+            color:white;
+            background-color: rgb(147, 228, 185);
+            border-color: blue;
+            border-radius: 5px;
+            line-height: 1.1;
+        }
+        .front_image{
+                 height:500px;
+                background-color: #BBE9FF;
+                 display:grid;
+                 grid-template-columns: 1fr 1fr;
+        }
+        .fr_image{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .fimage{
+            height:400px;
+            width:400px;
+            border-radius: 15px;
+            background-image:url("./R.png");
+        }
+        .fr_text{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ftext{
+            height: 350px;
+            width:400px;
+            padding:5px;
+        }
+        .ftext h1{
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        .ftext p[value="3"]{
+            font-family:'Arial', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .offer1{
+            height:400px;
+            display:grid;
+            grid-template-rows: 1fr;
+            grid-template-columns:1fr 1fr 1fr;
+            background-color: #BBE9FF;
+            
+        }
+        .product{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+        }
+        .p1 img{
+            padding-bottom: 10px;
+        }
+        .p1 p{
+            padding-top: 10px;
+        }
+        .off-text{
+            height:100px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(147, 228, 185);
+        }
+        .sample{
+            height: 800px;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color:#BBE9FF;
+
+        }
+        .pc1{
+             
+             display:flex;
+             justify-content: center;
+             flex-direction: column;
+             align-items: center;
+        }
+        .show-img{
+            height:275px;
+            width: 275px;
+            border-radius: 50%;
+        }
+        .pic1{
+            background-image: url("./d11.jpg");
+        }
+        .pic2{
+            background-image: url("./argan-oil-skin.jpg");
+        }
+        .pic3{
+            background-image: url("./essential-oils-with-rosemary--cloves---cinnamon--1304141544-dd01b268f7e843f7b0cd6f9dcb87fb53.jpg");
+        }
+        .pic4{
+            background-image: url("./3818ccb0adf9f39b09c549adb66152c2.jpg");
+        }
+        .pic5{
+            background-image: url("./neem.jpeg");
+        }
+        .pic6{
+            background-image: url("./Green-Tea.jpg");
+        }
+        .review{
+            height:500px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:#BBE9FF;
+        }
+        .pimple-img{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pimple-pic{
+            height:450px;
+            width:450px;
+            border-radius: 10px;
+            background-image: url("./acne-box-1-480x480.jpg");
+
+        }
+        .testimonial {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff7f50;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    font-style: italic;
+    text-align: right;
+}
+.question{
+    height:350px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#BBE9FF;
+    
+}
+.ques1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ques11{
+    height:250px;
+    width:400px;
+    border-radius: 10px;
+    padding:20px;
+    color:#333;
+}
+.box{
+    height:400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:#BBE9FF;
+}
+.box1{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture1{
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    background-image: url("./ING_33594_124946-924x647123.jpg");
+}
+.picture2{
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    background-image: url("./feature.jpeg");
+}
+.picture3{
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    background-image: url("./service.jpeg");
+}
+.picture4{
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    background-image: url("./adv2.jpeg");
+}
+@media(max-width:1200px){
+    .box{
+    height:800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:5px;
+}
+.sample{
+            height: 1200px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap:5px;
+
+        }
+        .question{
+                height:510px;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                gap:5px;
+}
+
+
+}
+@media(max-width:950px){
+    .review{
+            height:975px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            gap:5px;
+        }
+        .offer1{
+            height:800px;
+            display:grid;
+            width:100%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns:1fr 1fr;
+            gap:5px;
+
+        
+        }    
+        .front_image{
+                 height:1000px;
+                 display:grid;
+                 width:100%;
+                 grid-template-rows: 1fr 1fr;
+                 grid-template-columns: 1fr;
+                 gap:5px;
+        }
+        .fr_image{
+            display:flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .fr_text{
+            display:flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        }
+
+@media(max-width:850px){
+
+    .question{
+    height:800px;
+    width:100%;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+.ques1{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+}
+@media(max-width:650px){
+    .sample{
+            height: auto;
+            display:grid;
+            width:100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap:5px;
+
+        }
+        .box{
+    height:auto;
+    display: grid;
+    width:100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.offer1{
+            height:1200px;
+            display:grid;
+            width:100%;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns:1fr;
+            gap:5px;
+        }   
+}
+@media (max-width: 615px) {
+    .menu p:nth-child(3) {
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .header1{
+            background-color:rgb(212, 209, 206);
+            height:100px;
+            width:auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .logo{
+            height:85px;
+        }
+        
+        .menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+
+
+}
+@media(max-width:450px){
+    .header1{
+            background-color:rgb(212, 209, 206);
+            height:100px;
+            width: 100%;
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .logo{
+            height:85px;
+        }
+        
+        .menu{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .front_image{
+                 height:500px;
+                 display:grid;
+                 width:100%;
+                 grid-template-rows: 1fr 1fr;
+                 grid-template-columns: 1fr;
+                 background-color:#BBE9FF;
+        }
+        .fr_image{
+            display:flex;
+            justify-content: left;
+            align-items: center;
+
+        }
+        .fimage{
+            height:300px;
+            width:300px;
+            border-radius: 15px;
+            background-image:url("./R.png");
+        }
+        .fr_text{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ftext{
+            height: 300px;
+            width:300px;
+            padding:5px;
+        }
+        .ftext h1{
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        .ftext p[value="3"]{
+            font-family:'Arial', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .review{
+            height:1000px;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            background-color:#BBE9FF;
+        }
+        .pimple-img{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pimple-pic{
+            height:300px;
+            width:300px;
+            border-radius: 10px;
+            background-image: url("./acne-box-1-480x480.jpg");
+
+        }
+        .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    font-style: italic;
+    text-align: right;
+}
+
+}
+@media(max-width:400px){
+    .question{
+    height:800px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color:#BBE9FF;
+    
+}
+.ques1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.ques11{
+    height:200px;
+    width:250px;
+    border-radius:10px;
+    padding:20px;
+    color:#333;
+}
+}
+@media(max-width:340px){
+    .fimage{
+            height:250px;
+            width:250px;
+            border-radius: 15px;
+            background-image:url("./R.png");
+        }
+        .pimple-pic{
+            height:250px;
+            width:250px;
+            border-radius: 10px;
+            background-image: url("./acne-box-1-480x480.jpg");
+
+}
+.testimonial {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff7f50;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.testimonial-text {
+    font-size: 10px;
+    color: #333;
+    margin: 0 0 5px;
+    line-height: 1.1;
+}
+.testimonial-author {
+    font-size: 10px;
+    color: #555;
+    margin: 0;
+    font-style: italic;
+    text-align: right;
+}
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header1">
+        <div class="title">
+                <img class="logo" src="./logo1.png" alt="logo_image">
+        </div>
+        <div class="menu">
+               <p><button value="3"><a>LogIn</a></button></p>
+               <p><button value="3"><a>Sign Up</a></button></p>
+               <p><button value="3"><a>Contact Us</a></button></p>
+        </div>
+    </div>
+    <div class="front_image">
+        <div class="fr_image">
+            <div class="fimage">
+
+            </div>
+                
+        </div>
+        <div class="fr_text">
+              <div class="ftext">
+                   <h1>
+                    Product
+                   </h1>
+                   <h1>Catalog</h1>
+                   <p value="3">Choose what is good for you</p>
+                   <p><button value="3"><a>View Product</a></button></p>
+              </div>
+        </div>
+    </div>
+    <div class="off-text">
+           <h1>What We Offer</h1>
+    </div>
+    <div class="offer1">
+        <div class="product">
+            <div class="p1">
+                <img src="./add1-removebg-preview.png" alt="image" height="200px">
+                <p>Add A Product</p>
+            </div>
+
+
+        </div>
+        <div class="product">
+             <div class="p1">
+                 <img src="./OIP__1_-removebg-preview.png" alt="image" height="200px">
+                 <p>Add Feature</p>
+             </div>
+        </div>
+        <div class="product">
+            <div class="p1">
+                <img src="./bird-removebg-preview.png" alt="image" height="200px">
+                <p>Our Service</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="off-text">
+        <h1>Customized Our Feature</h1>
+ </div>
+ <div class="box">
+    <div class="box1">
+           <div class="picture1">
+
+           </div>
+           <h2>Add A Product</h2>
+           <p>Give a detailed description of the offer</p>
+    </div>
+    <div class="box1">
+          <div class="picture2">
+
+          </div>
+          <h2>Our Feature</h2>
+          <p>Give a detailed description of the offer</p>
+    </div>
+    <div class="box1">
+         <div class="picture3">
+
+         </div>
+         <h2>Our Service</h2>
+         <p>Give a detailed description of the offer</p>
+    </div>
+    <div class="box1">
+            <div class="picture4">
+
+            </div>
+            <h2>Your Belif</h2>
+            <p>Give a detailed description of the offer</p>
+    </div>
+ </div>
+    <div class="off-text">
+        <h1>Signature Service</h1>
+ </div>
+    <div class="sample">
+        <div class="pc1">
+             <div class="show-img pic1">
+             </div>
+             <p>Add A Product</p>
+             <p>25$</p>
+        </div>
+        <div class="pc1">
+            <div class="show-img pic2">
+            </div>
+            <p>Add A Benefit</p>
+            <p>15$</p>
+        </div>
+        <div class="pc1">
+            <div class="show-img pic3">
+            </div>
+            <p>Add A Benefit</p>
+            <p>10$</p>
+        </div>
+        <div class="pc1">
+            <div class="show-img pic4">
+            </div>
+            <p>Add A Product</p>
+            <p>20$</p>
+        </div>
+        <div class="pc1">
+            <div class="show-img pic5">
+            </div>
+            <p>Add A Product</p>
+            <p>20$</p>
+        </div>
+        <div class="pc1">
+            <div class="show-img pic6">
+            </div>
+            <p>Add A Product</p>
+            <p>20$</p>
+        </div>
+    </div>
+    <div class="off-text">
+        <h1>Review On Our Products</h1>
+ </div>
+    <div class="review">
+        <div class="pimple-img">
+            <div class="pimple-pic">
+            </div>        
+        </div>
+        <div class="man-review">
+            <div class="testimonial">
+                <p class="testimonial-text">Boost your product credibility by adding testimonials from your client.</p>
+                <h3 class="testimonial-author">Isabella Casarez, Satisfied Customers</h3>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">Boost your product credibility by adding testimonials from your client.People love recommendations so feedback from others who have triedit is invaluable.</p>
+                <h3 class="testimonial-author">Saira Kohli, Entrepreneur</h3>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">People love recommendations so feedback from others who have triedit is invaluable.</p>
+                <h3 class="testimonial-author">Matt Zhangyee,Patient</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="off-text">
+        <h1>FAQs</h1>
+ </div>
+ <div class="question">
+    <div class="ques1">
+        <div class="ques11">
+           <p>Having FAQ section is the great way to present<br> information about Your product or service.Using<br> Question and Answerformat make it morerelatable your users.</p>
+        </div>
+
+    </div>
+    <div class="ques1">
+         <div class="ques11">
+            <p>Having FAQ section is the great way to present <br>information about Your product or service.Using <br>Question and Answerformat make it morerelatable your users.</p>
+        </div>
+    </div>
+    <div class="ques1">
+        <div class="ques11">
+            <p>Having FAQ section is the great way to present <br>information about Your product or service.Using<br> Question and Answerformat make it morerelatable your users.</p>
+        </div>
+    </div>
+ </div>
+ <div class="off-text">
+    <h1> By (SSS)</h1>
+
+</div>
+
+
+</body>
+</html>
